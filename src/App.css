@@ -46,3 +46,31 @@ nav ul li {
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
 }
+/* Header */
+
+.header-wrapper{
+  position:realative;
+  background:url(HeaderLogo.jpg);
+  background-size: cover;
+  background-position:center;
+  height:90vh
+}
+.main-info{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  font-family: 'Bebas Neue', cursive;
+  
+}
+.main-info{
+  color:var(--primary-orange);
+  text-transform:uppercase;
+
+}
+/* Typed Text */
+.typed-text{
+  font-size:2rem;
+  color: var(--primary-white);
+}
