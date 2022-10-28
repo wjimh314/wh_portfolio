@@ -4,6 +4,9 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+
 }
 
 body{
@@ -49,7 +52,7 @@ nav ul li {
 /* Header */
 
 .header-wrapper{
-  position:realative;
+  position:relative;
   background:url(HeaderLogo.jpg);
   background-size: cover;
   background-position:center;
@@ -57,20 +60,43 @@ nav ul li {
 }
 .main-info{
   display:flex;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
   flex-direction: column;
   justify-content: center;
   align-items:center;
   text-align:center;
   font-family: 'Bebas Neue', cursive;
+   z-index: 1; 
   
 }
 .main-info{
-  color:var(--primary-orange);
+  color:var(--primary-white);
   text-transform:uppercase;
+}
+h2{color:var(--primary-white);
 
 }
 /* Typed Text */
 .typed-text{
   font-size:2rem;
   color: var(--primary-white);
+}
+/* Header main Offer btn */
+.btn-main-offer{
+border:5px solid #17a2b8;
+text-transform: uppercase;
+border-radius:12px;
+padding:10px 12px 12px 12px;
+color:var(--primary-white);
+margin: 2rem;
+}
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: #17a2b8;
+  transition: 1.0s ease-in-out;
+  
 }
