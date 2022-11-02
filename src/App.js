@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
-
+import Languages from './components/Languages';
 function App() {
   return(
   <>
@@ -21,9 +21,11 @@ function App() {
       }
     }}
   /> } */}
+  
   <Navbar />
    <Header />
    <AboutMe/>
+   <Languages/>
    </>
   );
 }
