@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Languages from './components/Languages';
+import Resume from './components/Resume';
 function App() {
   return(
   <>
@@ -26,6 +27,7 @@ function App() {
    <Header />
    <AboutMe/>
    <Languages/>
+   <Resume/>
    </>
   );
 }
