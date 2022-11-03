@@ -18,6 +18,9 @@ body{
 
 }
 /************************ NAVBAR *********************************/
+.nav{
+  z-index:2;
+}
 .logo {
   width: 16.25rem;
 }
@@ -44,6 +47,11 @@ nav ul li {
   max-width: 17.25rem;
   padding: 0 !important;
   height: 6rem !important;
+}
+@media(max-width:768px){
+  .navbar-brand{
+    width:7rem;
+  }
 }
 
 .navbar-nav > li > a.active,  .navbar-nav > li > a.active:focus {
@@ -88,6 +96,15 @@ h2{color:var(--primary-white);
 .typed-text{
   font-size:2rem;
   color: var(--primary-white);
+}
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+
+  }
 }
 /* Header main Offer btn */
 .btn-main-offer{
@@ -140,13 +157,16 @@ margin: 2rem;
   padding-bottom:2rem;
   background:var(--primary-light-grey);
 }
-
+.languages h1{
+  color:var(--primary-dark)
+}
 .languages .box {
   height: 16rem;
   border-bottom: 0.3125rem solid var(--primary-orange);
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background: var(--primary-white);
+  transition: 0.3s ease-in-out;
 }
 
 .languages .box:hover {
@@ -167,8 +187,11 @@ margin: 2rem;
 }
 
 /* Resume */
+.resume{
+  padding:.7rem;
+}
 .resume-wrapper{
-  position:absolute;
+  position:relative;
   padding: 3.125rem 0;
   overflow: hidden;
 
@@ -178,7 +201,7 @@ margin: 2rem;
   padding:.7rem;
 }
 .resume-wrapper::before{
-  position:relative;
+  position:absolute;
   content:"";
   top:0;
   left:50%;
@@ -245,4 +268,95 @@ z-index:3;
       width: 100%;
     }
   }
-  
+  /************************ PORTFOLIO *********************************/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+/*------------ OVERFLOW BOX ------------------*/
+.overflow {
+  position: absolute;
+   opacity: 0;
+   background: var(--primary-black);
+   width: 15rem;
+   height: 8rem;
+   top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/*------------ OVERFLOW BOX ------------------*/
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer; 
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  color: var(--primary-red);
+}
+
+/*------------ MEDIA ------------------*/
+@media(max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media(max-height: 570px) {
+.popupbox-wrapper {
+  height: 100%;
+}
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media(max-height: 280px) {
+  .popupbox-wrapper {
+    height: 90%;
+  }
+    .portfolio-image-popupbox {
+      width: 30%;
+    }
+  }

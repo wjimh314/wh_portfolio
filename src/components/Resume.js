@@ -2,7 +2,7 @@ import React from 'react'
 
 const Resume = () => {
   return (
-  <div className='resume'>
+  <div id='Resume' className='Resume'>
     <div className='d-flex justify-content-center my-5'>
     <h1>Resume</h1>
   </div>
@@ -44,4 +44,4 @@ const Resume = () => {
   )
 }
 
-export default Resume
+export default Resume;
