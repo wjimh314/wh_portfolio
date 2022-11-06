@@ -2,7 +2,7 @@ import React from 'react'
 
 const Languages = () => {
   return (
-    <div className="languages">
+    <div id="Languages" className="languages">
         <h1 className="py-5">my process</h1>
             <div className="container">
                 <div className="row">

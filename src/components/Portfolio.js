@@ -7,6 +7,7 @@ import gitThatCurrency from "./images/gitThatCurrency.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 // REACT POPUPBOX
+
 import {
 	PopupboxManager,
 	PopupboxContainer,
@@ -47,9 +48,10 @@ const Portfolio = () => {
 			</>
 		);
 		PopupboxManager.open({ content });
+		PopupboxManager.update({});
 	};
 
-	const popupboxConfigTheBlackBook = {
+	const PopupboxConfigTheBlackBook = {
 		titleBar: {
 			enable: true,
 			text: "TheBlackBook.",
@@ -107,7 +109,7 @@ const Portfolio = () => {
 		PopupboxManager.update({});
 	};
 
-	const popupboxConfiggitThatCurrency = {
+	const PopupboxConfiggitThatCurrency = {
 		titleBar: {
 			enable: true,
 			text: "GitThatCurrency",
@@ -160,7 +162,7 @@ const Portfolio = () => {
 		PopupboxManager.update({});
 	};
 
-	const popupboxConfigFoodFREQS = {
+	const PopupboxConfigFoodFREQS = {
 		titleBar: {
 			enable: true,
 			text: "food",
@@ -170,7 +172,9 @@ const Portfolio = () => {
 	};
 
 	return (
-		<div className="portfolio-wrapper">
+		<div
+			id="portfolio"
+			className="portfolio-wrapper">
 			<div className="container">
 				<h1 className="text-uppercase text-center py-5">
 					portfolio
@@ -223,11 +227,11 @@ const Portfolio = () => {
 					{/* - */}
 				</div>
 			</div>
-			<PopupboxContainer {...popupboxConfigTheBlackBook} />
+			<PopupboxContainer {...PopupboxConfigTheBlackBook} />
 			<PopupboxContainer
-				{...popupboxConfiggitThatCurrency}
+				{...PopupboxConfiggitThatCurrency}
 			/>
-			<PopupboxContainer {...popupboxConfigFoodFREQS} />
+			<PopupboxContainer {...PopupboxConfigFoodFREQS} />
 		</div>
 	);
 };
