@@ -289,7 +289,7 @@ z-index:3;
   margin: 1rem;
 }
 
-/*------------ OVERFLOW BOX ------------------*/
+/* overflow */
 .overflow {
   position: absolute;
    opacity: 0;
@@ -319,6 +319,10 @@ z-index:3;
   opacity: 70%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.popupbox-wrapper {
+  margin-top: 7rem;
 }
 
 /*------------ OVERFLOW BOX ------------------*/
@@ -360,9 +364,7 @@ z-index:3;
       width: 30%;
     }
   }
-  
- 
- 
+  /*  */
  
   /************************ FOOTER COMPONENT *********************************/
 .footer {

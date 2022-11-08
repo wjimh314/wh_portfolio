@@ -30,7 +30,7 @@ function App() {
    <AboutMe/>
    <Languages/>
    <Resume/>
-    <Portfolio/> 
+    <Portfolio/>  
     <Footer/>
 
    </>
